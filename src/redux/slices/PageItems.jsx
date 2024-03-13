@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState ={
-    singlePageItems : []
+    singlePageItems : [],
+    // deletedItems : []
 }
 
 export const PageItems = createSlice({
@@ -14,6 +15,9 @@ export const PageItems = createSlice({
         removePageItems:(state, action)=>{
             state.singlePageItems = state.singlePageItems.filter((item) => item.id !== action.payload);
          },
+        //  setDeletedItems : (state, action)=>{
+        //     state.deletedItems = action.payload
+        //  }
       
     } 
 })

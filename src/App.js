@@ -2,7 +2,7 @@
 import "./App.css";
 import Cards from "./components/Cards";
 import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { setItems } from "./redux/slices/ProductSlice";
 
 import { setPageItems } from "./redux/slices/PageItems";
@@ -11,6 +11,7 @@ function App() {
  
   const [isLoading, setIsLoading] = useState(true);
   const [loading, setLoading] = useState(true);
+
 
   const dispatch = useDispatch();
 
